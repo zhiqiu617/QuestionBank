@@ -1,0 +1,20 @@
+<!--client/pages/showanswers/showanswers.wxml-->
+<view style="margin-bottom:100rpx;">
+  <view class="blockItem" wx:for="{{ques_show}}" wx:for-index='key'>
+    <view  class='section' id="{{item.quesid}}">
+      <text class='top'>{{key+1}}. {{item.question}}</text>
+      <view class='answer' wx:for="{{item.selection}}" wx:for-index='key' value="{{item.name}}" id='{{key}}'>
+        <image src="{{item.type}}" class="iconSet"></image>
+        <text decode="{{true}}">{{item.count}}&ensp;{{item.value}}</text>      
+      </view>     
+    </view> 
+    
+    <view class="bottom" catchtap='onCollectTap' id="{{key}}">
+      <view class="bottomNull"></view>
+      <image wx:if="{{item.collectStatus}}" src="../image/collected.png"></image>
+      <image wx:else src="../image/collect.png"></image>
+    </view>    
+  </view>
+</view>
+
+<view class="bottomBar" bindtap="gotoCollection">收藏集</view>

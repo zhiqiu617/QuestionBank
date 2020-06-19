@@ -1,0 +1,45 @@
+<!--client/pages/collect/collect.wxml-->
+<view class='nav'>
+  <block wx:for="{{nav}}" wx:key="key">
+    <view class="{{ curIndex === item.id ? 'txt' : ''}}" data-id="{{item.id}}" bindtap="navTap">{{item.title}}</view>
+  </block>
+</view>
+
+<view class="swipeblock">
+  <!--重置小圆点的样式 -->
+  <view class="dots"> 
+    <block wx:for="{{swipeCard}}">
+      <block wx:if="{{item.cardid == curIndex}}">
+        <block wx:for="{{item.ques_show}}"> 
+          <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view> 
+        </block>
+      </block>
+    </block> 
+  </view> 
+
+  
+    <swiper class='swiper_box' current="{{currentSwiper}}" bindchange="swiperChange" 
+    vertical="{{vertical}}" autoplay="{{autoplay}}">      
+      <block wx:for="{{swipeCard}}">
+        <view wx:if="{{item.cardid == curIndex}}">
+          <block wx:for="{{item.ques_show}}" wx:for-index='key'>
+            <swiper-item>        
+              <view  class='section' id="{{item.quesid}}">
+                <text class='top'>{{key+1}}. {{item.question}}</text>
+                <view class='answer' wx:for="{{item.selection}}" value="{{item.name}}">
+                  <image src="{{item.type}}" class="iconSet"></image>
+                  <text decode="{{true}}">{{item.count}}&ensp;{{item.value}}</text>      
+                </view>     
+              </view>        
+              
+              <view class="bottom" catchtap='onCollectionTap' id="{{key}}">
+                <image wx:if="{{item.collectionStatus}}" src="../image/collected.png"></image>
+                <image wx:else src="../image/collect.png"></image>
+              </view>
+            </swiper-item>
+          </block>
+        </view> 
+      </block>     
+    </swiper>
+    
+</view>

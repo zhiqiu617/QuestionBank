@@ -1,0 +1,53 @@
+/* client/pages/user/user.wxss */
+.topItem{
+  margin:80rpx 0 150rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userimage {
+  overflow:hidden;  
+  display: block;  
+  width: 170rpx;  
+  height: 170rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+.pic{
+  width:120rpx;
+  height:120rpx;
+  margin: 20rpx 0;
+}
+
+.person-line{
+  border-top: 2rpx solid;
+  border-color: #d1cdcd;
+}
+button{
+  height: 80rpx;
+  background: none;
+}
+button::after{
+  border: none;
+}
+.section{
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.toRight1{
+  width:90%;
+  text-align: left;
+}
+.toRight2{
+  width: 96%;
+  text-align: left;
+}
+.icon{
+  width:40rpx;
+  height: 40rpx;
+}

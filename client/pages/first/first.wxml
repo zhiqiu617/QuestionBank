@@ -1,0 +1,13 @@
+<!--client/pages/first/first.wxml-->
+<scroll-view class='main'>
+  <view class='show'>
+    <text class='title'>选择课程</text>
+    <block wx:for="{{courseShow}}" wx:for-index="key">
+      <view class='section' id="{{key}}" bindtap="courseChoice">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+

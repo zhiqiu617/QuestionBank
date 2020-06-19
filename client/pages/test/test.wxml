@@ -1,0 +1,29 @@
+<!--client/pages/test/test.wxml-->
+<view wx:if="{{tp}}" class="timerSet">
+  {{countDownNum}}
+</view>
+<view>
+  <radio-group>
+    <!-- <scroll-view scroll-y='true' style="height:1200rpx"> -->
+      <view  class='section'>
+        <text class='top'>{{question}}</text>
+        <label class='sectionItem' wx:for="{{selection}}" wx:for-index='key'>
+          <radio style="vertical-align:middle;" color='#fff' value="{{item.name}}"
+          id='{{key}}' checked="{{item.checked}}" bindtap="selectAnswer">
+            <view  class='answer'><text decode="{{true}}">{{item.count}}&ensp;{{item.value}}</text></view>
+          </radio>
+        </label>
+      </view>      
+    <!-- </scroll-view> -->
+  </radio-group>
+  
+  <view wx:if="{{thelast}}" class='bottom'>
+    <button class='choice' bindtap="preQues">上一题</button>
+    <button class='choice' bindtap="nextQues">下一题</button>
+  </view>
+  <view wx:else  class='bottom'>
+    <button class='choice' bindtap="preQues">上一题</button>
+    <button class='choice' bindtap="quesSubmit">提交</button>
+  </view>
+</view>
+

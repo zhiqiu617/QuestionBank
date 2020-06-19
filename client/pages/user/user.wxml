@@ -1,0 +1,44 @@
+<!--client/pages/user/user.wxml-->
+<view>
+  <view class='topItem'>
+    <view class='userimage'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+      <open-data type="userNickName"></open-data>
+    <!-- <image class='pic' src='../image/pic.png'></image>
+    <text>Name</text> -->
+  </view>
+
+  <!--<view class='person-line'></view>
+  <button>
+    <view class='section'>
+      <text class='toRight1'>小金库</text>
+      <text>0000</text>
+      <image class='icon' src='../image/gold.png'></image>
+    </view>
+  </button>
+  -->
+  <view class='person-line'></view>
+  <button bindtap="gotoUserknow">
+    <view class='section'>
+    <text class='toRight2'>用户须知</text>
+    <image class='icon' src='../image/to.png'></image>
+    </view>
+  </button>
+  <view class='person-line'></view>
+  <button bindtap="gotoSendmail">
+    <view class='section'>
+    <text class='toRight2'>意见反馈</text>
+    <image class='icon' src='../image/to.png'></image>
+    </view>
+  </button>
+  <view class='person-line'></view>
+  <button bindtap="gotoAbout">
+    <view class='section'>
+    <text class='toRight2'>关于</text>
+    <image class='icon' src='../image/to.png'></image>
+    </view>
+  </button>
+  <view class='person-line'></view>
+</view>
+

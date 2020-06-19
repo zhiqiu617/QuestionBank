@@ -1,0 +1,34 @@
+/* client/pages/first/first.wxss */
+
+.main{
+  font-size: 32rpx;
+}
+
+.show{
+  font-family: '华文细黑';
+  margin: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 34rpx;
+  padding: 30rpx;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:10rpx;
+  padding: 36rpx;
+  width:70%;
+  border: 2rpx solid;
+  border-color: #ced1ce;
+  border-radius: 25rpx;
+  box-shadow:5rpx 5rpx 7rpx 5rpx #cfd4cf;
+}
+
+

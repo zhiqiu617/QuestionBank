@@ -1,0 +1,46 @@
+{
+  "pages": [
+    
+    "pages/authorize/authorize",
+    "pages/course/course",
+    "pages/coursedetail/coursedetail",
+    "pages/first/first",
+    
+    "pages/test/test",
+    "pages/showanswers/showanswers",
+    "pages/collect/collect",
+    "pages/user/user",
+    "pages/about/about",
+    "pages/suggestion/suggestion",
+    "pages/userknow/userknow",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/searchdetail/searchdetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "E家题库",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程",
+        "color": "#000000",
+        "selectedColor": "#eeeeee"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "color": "#000000",
+        "selectedColor": "#eeeeee"
+      }
+    ],
+    "backgroundColor": "#8bdb9857"
+  },
+  "sitemapLocation": "sitemap.json"
+}

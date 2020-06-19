@@ -1,0 +1,29 @@
+<!--client/pages/course/course.wxml-->
+<scroll-view class='main'>
+  <view class='section'  wx:for="{{myCourse}}" wx:for-index='key'>
+    <view class="topItem">
+      <view class='leftItem'>
+        <image class="pic" src='../image/book6.png'></image>
+        <view class='courseNmae'>
+          <text>{{item}}</text>
+          <!--<text style='font-size:28rpx'>最高分：0分</text>-->
+        </view>
+      </view>
+      <view class='rightItem' id="{{key}}">
+        <button bindtap="collect">
+          <image class='icon' src='{{src+icon[0]}}'></image>
+          <text>收藏</text>
+        </button>
+        <button bindtap="wrongList">
+          <image class='icon' src='{{src+icon[1]}}'></image>
+          <text>错题</text>
+        </button>
+      </view>
+    </view>
+    <view class="buttomItem">
+      <button id="{{key}}" bindtap="gotoExercise">练习</button>
+      <button id="{{key}}" bindtap="gotoExam">考试</button>
+      <button id="{{key}}" bindtap="gotoSearch">查询</button>
+    </view>
+  </view>
+</scroll-view>

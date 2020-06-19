@@ -1,0 +1,19 @@
+<!--client/pages/coursedetail/coursedetail.wxml-->
+
+<view class="top">
+  <view class="title">{{course_name}}</view>
+  <view class='page_row'>
+    <view class="search">
+      <icon class="search_cion" size='20' type='search'></icon>
+      <input placeholder="请输入关键字" bindinput="searchInput"></input>
+    </view>
+    <button class='submit' bindtap="searchSubmit">搜索</button>
+  </view>
+</view>
+
+<view class="bottom" wx:if="{{resulttick}}">
+  <block wx:for="{{resultLists}}" wx:for-index='key'>
+    <view class="result_list" id="{{key}}" bindtap="gotoDetail">{{item}}</view>
+    <view class="line"></view>      
+  </block>
+</view>

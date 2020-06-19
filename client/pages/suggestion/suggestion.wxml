@@ -1,0 +1,38 @@
+<!--client/pages/suggestion/suggestion.wxml-->
+<view>
+  <view class='title'>请选择反馈内容</view>
+  <view class='line'></view>
+  <block wx:for="{{suggestion}}" wx:for-index='key'>
+    <view class='section' id="{{key}}" bindtap="sugChoose">
+      <text class='toRight'>{{item.wrong}}</text>
+      <image class='icon' src='../image/to.png'></image>
+    </view>
+    <view class='line'></view>
+  </block>
+  
+  <!--点击最后一项时触发弹窗显示-->
+  <block wx:if="{{isShowConfirm}}">
+      <view class='toast-box'>
+        <view class='toastbg'></view>
+        <view class='showToast'>
+            <view class='toast-title'>
+                <text>意见反馈</text>
+            </view>
+            <view class='toast-main'>
+                <view class='toast-input'>
+                    <textarea bindblur='giveSug' data-name='sugDtail'></textarea>
+                </view>
+            </view>
+            <view class='toast-button'>
+                <view class='button1'>
+                    <button catchtap='cancel'>取消</button>
+                </view>
+                <view class='button2'>
+                    <button catchtap='confirmAcceptance'>确定</button>
+                </view>
+            </view>
+        </view>
+    </view>
+  </block>
+</view>
+

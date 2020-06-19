@@ -1,0 +1,31 @@
+/* client/pages/searchdetail/searchdetail.wxss */
+.blockItem{
+  border: 2rpx solid;
+  border-color: #9afd9a;
+  border-radius: 25rpx;
+  margin: 10rpx 0;
+}
+
+/*问题部分*/
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20rpx 40rpx 5rpx 60rpx;
+}
+.top{
+  margin: 30rpx 0;
+  font-size: 42rpx;
+}
+.answer{
+  margin:20rpx 0;
+  width: 650rpx;  
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+.iconSet{
+  margin-right:16rpx;
+  width:48rpx;
+  height:48rpx;
+}

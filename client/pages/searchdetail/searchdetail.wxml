@@ -1,0 +1,10 @@
+<!--client/pages/searchdetail/searchdetail.wxml-->
+<view class="blockItem" wx:for="{{ques_show}}" wx:for-index='key'>
+  <view  class='section' id="{{item.quesid}}">
+    <text class='top'>{{key+1}}. {{item.question}}</text>
+    <view class='answer' wx:for="{{item.selection}}" wx:for-index='key' value="{{item.name}}" id='{{key}}'>
+      <image src="{{item.type}}" class="iconSet"></image>
+      <text decode="{{true}}">{{item.count}}&ensp;{{item.value}}</text>      
+    </view>     
+  </view>
+</view>

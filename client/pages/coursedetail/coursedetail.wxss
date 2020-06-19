@@ -1,0 +1,75 @@
+/* client/pages/coursedetail/coursedetail.wxss */
+page{
+  height: 100%;
+}
+
+/**
+*上部
+*/
+.top{
+  background:linear-gradient(130deg, #33e0ffb2, #7cfd49be);
+}
+.title{
+  padding: 8%;
+  color:rgb(53, 148, 1);
+}
+
+/*搜索框*/
+.page_row{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40rpx;
+}
+.search{
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 40rpx;
+  width: 65%;
+}
+.search_cion {
+  margin: 10rpx 10rpx 10rpx 30rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.search input{
+  margin-left: 65rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+.submit {
+  margin-left: 20rpx;
+  width: 19%;
+  height: 70rpx;
+  line-height: 180%;
+  text-align: center;
+  font-size: 36rpx;
+  border: 1px solid #dfdfdf;
+  border-radius: 10rpx;
+}
+
+/**
+*下部分
+*/
+.bottom{
+  margin:50rpx 0;
+}
+.result_list{
+  display: flex;
+  margin: 30rpx;
+  color:#242424;
+  height: 100rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;   /*行数为2*/
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.line{
+  height: 2rpx;
+  background: linear-gradient(to right, #eef0f1, #abacaa);
+}

@@ -1,0 +1,8 @@
+<!--client/pages/about/about.wxml-->
+<view class='main'>
+  <image class='pic' src='../image/wechat.png'></image>
+  <view class='bottom'>
+    <text>author: EG,</text>
+    <text>2019-07-13</text>
+  </view>
+</view>

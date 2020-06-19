@@ -1,0 +1,23 @@
+/* client/pages/about/about.wxss */
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 200rpx 0;
+}
+
+.pic{
+  width:173rpx;
+  height: 173rpx;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: fixed;
+  bottom: 70rpx;
+  font-size: 28rpx;
+  color: #3a3939;
+}

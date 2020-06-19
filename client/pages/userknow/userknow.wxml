@@ -1,0 +1,7 @@
+<!--client/pages/userknow/userknow.wxml-->
+<view class='main'>
+  <block wx:for="{{problem}}">
+    <view class='question'>Q:{{item.question}}</view>
+    <view class='answer'>A:{{item.answer}}</view>
+  </block>
+</view>
