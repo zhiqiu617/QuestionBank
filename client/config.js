@@ -3,8 +3,8 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://66n1kwbp.qcloud.la';
-var appId = 'wx486bbec8c6fa975c'
+var host = 'https://...';
+var appId = '...'
 
 var config = {
 
